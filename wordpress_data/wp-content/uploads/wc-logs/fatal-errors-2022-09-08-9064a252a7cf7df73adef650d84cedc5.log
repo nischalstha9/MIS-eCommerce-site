@@ -1,0 +1,9 @@
+2022-09-08T16:27:49+00:00 CRITICAL Uncaught Error: Class 'Automattic\WooCommerce\Admin\API\OnboardingPlugins' not found in /var/www/html/wp-content/plugins/woocommerce/src/Internal/Admin/Notes/InstallJPAndWCSPlugins.php:119
+Stack trace:
+#0 /var/www/html/wp-content/plugins/woocommerce/src/Internal/Admin/Notes/InstallJPAndWCSPlugins.php(108): Automattic\WooCommerce\Internal\Admin\Notes\InstallJPAndWCSPlugins->install_and_activate_plugin('jetpack')
+#1 /var/www/html/wp-includes/class-wp-hook.php(307): Automattic\WooCommerce\Internal\Admin\Notes\InstallJPAndWCSPlugins->install_jp_and_wcs_plugins(Object(Automattic\WooCommerce\Admin\Notes\Note))
+#2 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#3 /var/www/html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#4 /var/www/html/wp-content/plugins/woocommerce/src/Admin/Notes/Notes.php(360): do_action('woocommerce_not...', Object(Automattic\WooCommerce\Admin\Notes\Note))
+#5 /var/www/html/wp-content/plugins/woocommerce/src/Admin/API/NoteActions.php(82): Automatti in /var/www/html/wp-content/plugins/woocommerce/src/Internal/Admin/Notes/InstallJPAndWCSPlugins.php on line 119
+
